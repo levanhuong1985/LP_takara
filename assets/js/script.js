@@ -1,5 +1,18 @@
 (function($){
 
+		/* jsCreatedOverlay
+	--------------------------------------------------*/
+	var jsCreateOverlay = function(){
+		var overlay = $('<div class="overlay"></div>');
+		overlay.prependTo(document.body);
+	}
+
+	/* jsRemoveOverlay
+	--------------------------------------------------*/
+	var jsRemoveOverlay = function(){
+		$(".overlay").remove();
+	}
+
 	/* jsAnchors
 	--------------------------------------------------*/
 	var jsAnchors = function(){
@@ -101,20 +114,22 @@
 
 		//Fixed haven't yet
 		$(".btn-sellbuy li").click(function() {
-			var cTab = $(this);
-			cTab.siblings('li').removeClass("active");
-			cTab.addClass("active");
-			cTab.closest('.btn-sellbuy')
+			jsCreateOverlay();
+			var $this = $(this);
+			$this.siblings('li').removeClass("active");
+			$this.addClass("active");
+			$this.closest('.btn-sellbuy')
 				.nextAll('.nav-sellbuy-wrap')
 				.find('.nav-box')
 				.removeClass('on'); 
 
-			var activeTab = $(this).find('a').attr("href");
-			$(activeTab).addClass('on');
+			var $activeNav = $(this).find('a').attr("href");
+			$($activeNav).addClass('on');
 			return false;
 		});
 
-		$("html").click(function(){
+		$("html , .overlay").click(function(){
+			jsRemoveOverlay();
 			$(".nav-box").removeClass("on");
 			$(".btn-sellbuy li").removeClass("active");
 		});
@@ -125,20 +140,22 @@
 		//Fixed have
 
 		$(".btn-sellbuy-fixed li").click(function() {
-			var cTab = $(this);
-			cTab.siblings('li').removeClass("active");
-			cTab.addClass("active");
-			cTab.closest('.btn-sellbuy-fixed')
+			jsCreateOverlay();
+			var $this = $(this);
+			$this.siblings('li').removeClass("active");
+			$this.addClass("active");
+			$this.closest('.btn-sellbuy-fixed')
 				.parents('#header')
 				.nextAll('.nav-sellbuy-wrap')
 				.find('.nav-box')
 				.removeClass('is-open'); 
 
-			var activeTab = $(this).find('a').attr("href");
-			$(activeTab).addClass('is-open');
+			var $activeNav = $(this).find('a').attr("href");
+			$($activeNav).addClass('is-open');
 			return false;
 		});
 		$("html").click(function(){
+			jsRemoveOverlay();
 			$(".nav-box").removeClass("is-open");
 			$(".btn-sellbuy-fixed li").removeClass("active");
 		});
@@ -188,10 +205,21 @@
 		$('.openmenu').on('click', function() {
 			$('#gnav').toggleClass('open');
 			$(this).toggleClass('active');
+			$('body, html').toggleClass('noscroll');
 		});
 		$('.closemenu').on('click', function() {
 			$('#gnav').removeClass('open');
 			$('.openmenu').removeClass('active');
+			$('body, html').removeClass('noscroll');
+		});
+
+		$('.openmenu-sup').click(function(){
+			$('.openmenu-sup').removeClass('active');
+			$('#gnav .sub-list-sellbuy').removeClass('is-show');
+			if($(this).next().is(':visible')==false){
+				$(this).next().addClass('is-show');
+				$(this).addClass('active');
+			}
 		});
 	}
 
@@ -212,6 +240,9 @@
 	    });
 	}
 
+
+
+
 	/* Dom Ready
 	--------------------------------------------------*/
 	jsAnchors();
@@ -225,6 +256,7 @@
 
 	$('.matchHeight').matchHeight();
 
+	// SEARCH
 	$('#slider-main-search').slick({
 		dots: false,
 		slidesToShow: 4,
@@ -247,24 +279,101 @@
 		] 
 	});
 
-	// $('#gnav .gnav-sellbuy .ttl').click (function(){    
-	// 	$(this).removeClass('active');
-	// 	if($(this).next().css('display') == 'none') {
-	// 		$(this).next().slideDown(500);
-	// 		$(this).addClass('active');
-	// 	}    
-	// 	else {
-	// 		$(this).next().slideUp(500);
-	// 	}
-	// });
+	// MAIN VISUAL LOOPS
+	$('#slider-loops').slick({
+		arrows: false,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		dots: false,
+		variableWidth: true,
+		autoplay: true,
+		autoplaySpeed: 0,
+		speed: 1500,
+		cssEase: 'linear',
+		pauseOnHover: false,
+		swipeToSlide: true
+	});
 
-	$('#gnav .gnav-sellbuy .ttl').click(function(){
-	    $('#gnav .gnav-sellbuy ul').removeClass('active');
-	    $('#gnav .gnav-sellbuy ul').slideUp('slow');
-	    if($(this).next().is(':visible')==false){
-	        $(this).next().slideDown('slow');
-	        $(this).addClass('active');
-	    }
-	})
+	// NEW ARRIVAL
+	$('#slider-newarrival').slick({
+		dots: false,
+		slidesToShow: 4,
+		slidesToScroll: 2,
+		autoplay: true,
+		speed: 1500,
+		autoplaySpeed: 1000,
+		arrows: true,
+		variableWidth: true,
+		pauseOnHover: false,
+		prevArrow: $('#arrical-prev'),
+		nextArrow: $('#arrical-next'),
+		responsive: [
+			{
+			breakpoint: 768,
+				settings: {
+					centerMode: true,
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					speed: 1500,
+				}
+			},
+		] 
+	});
+
+	// VOICE
+	$('#slider-voice').slick({
+		dots: false,
+		slidesToShow: 2,
+		slidesToScroll: 1,
+		autoplay: true,
+		speed: 1000,
+		autoplaySpeed: 2000,
+		arrows: true,
+		variableWidth: true,
+		pauseOnHover: false,
+		responsive: [
+			{
+			breakpoint: 768,
+				settings: {
+					slidesToShow: 1,
+					speed: 1500,
+					variableWidth: false
+				}
+			},
+		] 
+	});
+
+	// FOR TOPPAGE
+	$(window).on('resize load', function() {
+		var $this = $(this);
+		var $winW = $this.width();
+		var $containerW = $('.container').width();
+		var $margin = ( $winW - $containerW ) / 2 ;
+		$('.img-greeting').css({
+			'margin-left': -($margin),
+			'width': $containerW/2 + $margin + 45
+		});
+
+		var $winW = $(this).innerWidth();
+		if($winW < 768) {
+			if(!$('#slider-pickup').hasClass('slick-initialized')){
+				$('#slider-pickup').slick({
+					centerMode: true,
+					arrows:false,
+					dots:true,
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					infinite: true,
+					variableWidth: true,
+					autoplay: true,
+					autoplaySpeed: 5000,
+				});
+		}
+		}else{
+			if($('#slider-pickup').hasClass('slick-initialized')){
+				$('#slider-pickup').slick('unslick');
+			}
+		}
+	});
 
 })(jQuery);

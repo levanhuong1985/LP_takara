@@ -283,7 +283,7 @@
 }
 
 .sec-greeting {
-	padding: 180px 0;
+	padding: 180px 0 120px;
 	position: relative;
 }
 .sec-greeting:before {
@@ -609,6 +609,7 @@
 		width: 10px;
 		margin: 0 5px;
 		padding: 0;
+		outline: none;
 		text-indent: -999em;
 		-webkit-appearance:none
 	}
@@ -685,6 +686,7 @@
 .sec-newarrival .list .info .date {
 	color: #B9B9B9;
 	font-size: 12px;
+	letter-spacing: 0.06em;
 }
 .sec-newarrival .block-buttons {
 	position: relative;
@@ -800,6 +802,7 @@
 .sec-purchase-prise .block-search .btn {
 	background: #1A1A1A url(../img/icons/icon_search.png) no-repeat center center;
 	background-size: 25px;
+	border-radius: 0;
 	cursor: pointer;
 	width: 24px;
 	height: 24px;
@@ -1649,6 +1652,7 @@
 #service-guide .box-contact .time {
 	font-size: 15px;
 	font-weight: bold;
+	letter-spacing: 0.06em;
 }
 @media screen and (max-width: 767px){
 	#service-guide {
@@ -2228,6 +2232,9 @@
 #store-search .list-search .item .img {
 	width: 30.5%;
 }
+#store-search .list-search .item .img img {
+	width: 100%;
+}
 #store-search .list-search .item .info {
 	padding: 6px 0 0 20px;
 	width: 69.5%;
@@ -2285,6 +2292,9 @@
 		color: #FFF;
 		font-size: 12px;
 		padding: 14px 0 10px;
+	}
+	#store-search .tab-link li:last-child a {
+		border-right: 1px solid #FFF;
 	}
 	#store-search .tab-link li a:before {
 		display: none;

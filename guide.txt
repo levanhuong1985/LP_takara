@@ -15,7 +15,7 @@ yahoo.html
 * JS có custome thì để dưới cùng của html source
 
 * CSS viết duy nhất trong /assets/css/content.css (Làm song song với anh nên luôn backup )
-
+	
 * Hình ảnh để trong /assets/img/ (nếu là icon thì để trong /icons/)
 
 * Cập nhật phần #keyv, #breadcrumb
