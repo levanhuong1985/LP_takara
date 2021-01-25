@@ -1,0 +1,25 @@
+■ポイントカード
+point_cart.html
+
+■卸・事業者向け
+copporation.html
+
+■特定商取引法に基づく表示
+law.html
+
+■ヤフオク ストア一覧
+yahoo.html
+
+* Lấy tiêu đề tiếng Nhật để vào cho <title>
+
+* JS có custome thì để dưới cùng của html source
+
+* CSS viết duy nhất trong /assets/css/content.css (Làm song song với anh nên luôn backup )
+
+* Hình ảnh để trong /assets/img/ (nếu là icon thì để trong /icons/)
+
+* Cập nhật phần #keyv, #breadcrumb
+
+* Codding trong #contents.
+
+* Đây là CMS PHP, nên không gắn class reset nếu không cần.
