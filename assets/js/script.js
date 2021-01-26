@@ -1,6 +1,6 @@
 (function($){
 
-		/* jsCreatedOverlay
+	/* jsCreatedOverlay
 	--------------------------------------------------*/
 	var jsCreateOverlay = function(){
 		var overlay = $('<div class="overlay"></div>');
@@ -113,8 +113,10 @@
 	var jsSellBuy = function(e){
 
 		//Fixed haven't yet
-		$(".btn-sellbuy li").click(function() {
-			jsCreateOverlay();
+		$(".btn-sellbuy li").hover(function() {
+			if($('.overlay').length <= 0) {
+				jsCreateOverlay();
+			}
 			var $this = $(this);
 			$this.siblings('li').removeClass("active");
 			$this.addClass("active");
@@ -123,24 +125,26 @@
 				.find('.nav-box')
 				.removeClass('on'); 
 
-			var $activeNav = $(this).find('a').attr("href");
+			var $activeNav = $(this).find('a').attr("rel");
 			$($activeNav).addClass('on');
 			return false;
 		});
 
-		$("html , .overlay").click(function(){
+		$("html, .overlay").mouseover(function(){
 			jsRemoveOverlay();
 			$(".nav-box").removeClass("on");
 			$(".btn-sellbuy li").removeClass("active");
 		});
-		$(".nav-sellbuy-wrap, .btn-sellbuy").click(function(e){
+		$(".nav-sellbuy-wrap, .btn-sellbuy").mouseover(function(e){
 			e.stopPropagation();
 		});
 
 		//Fixed have
 
 		$(".btn-sellbuy-fixed li").click(function() {
-			jsCreateOverlay();
+			if($('.overlay').length <= 0) {
+				jsCreateOverlay();
+			}
 			var $this = $(this);
 			$this.siblings('li').removeClass("active");
 			$this.addClass("active");
@@ -164,7 +168,7 @@
 		});
 	}
 
-	/* jsEffect
+	/* jsTabs
 	--------------------------------------------------*/
 	var jsTabs = function(){
 		// $("#tab-news li, #tab-search li").click(function() {
@@ -223,6 +227,31 @@
 		});
 	}
 
+
+	//function slider() {
+	var jsSliderMV = function(){
+	    function i() {
+	        $("#main-visual").delay(500).queue(function(i) {
+	            $(this).addClass("active"), $(".main-text, .btn-pickup, #scroll").delay(500).fadeIn(1500)
+	        }), a.eq(l).addClass("active").stop(!0, !0).queue(new Function).delay(1500).queue(function() {
+	            e && (a.removeClass("init"), a.eq(n).removeClass("active"), n++)
+	        }).dequeue(), l++, d++, r++, n > t && (n = 0), s > t && (s = 0), o > t && (o = 0), l > t && (l = 0), d > t && (d = 0), r > t && (r = 0)
+	    }
+	    var e = !1,
+	        a = $(".main-slider").children("li"),
+	        t = a.length - 1,
+	        n = 0,
+	        s = 0,
+	        o = 0,
+	        l = 0,
+	        d = 1,
+	        r = 2;
+	    setInterval(function() {
+	        e = !0, i()
+	    }, 6e3);
+	    i()
+	}
+
 	/* jsPageTop
 	--------------------------------------------------*/
 	var jsPageTop = function(){
@@ -252,34 +281,15 @@
 	jsSellBuy();
 	jsTabs();
 	jsMenu();
+	jsSliderMV();
 	jsPageTop();
 
 	$('.matchHeight').matchHeight();
 
-	// SEARCH
-	$('#slider-main-search').slick({
-		dots: false,
-		slidesToShow: 4,
-		slidesToScroll: 2,
-		autoplay: true,
-		speed: 2500,
-		autoplaySpeed: 1000,
-		arrows: false,
-		variableWidth: true,
-		pauseOnHover: false,
-		responsive: [
-			{
-			breakpoint: 768,
-				settings: {
-					slidesToShow: 2,
-					slidesToScroll: 1,
-					speed: 1500,
-				}
-			},
-		] 
-	});
-
 	// MAIN VISUAL LOOPS
+	
+	var target = $('#slider-loops');
+
 	$('#slider-loops').slick({
 		arrows: false,
 		slidesToShow: 1,
@@ -288,20 +298,34 @@
 		variableWidth: true,
 		autoplay: true,
 		autoplaySpeed: 0,
-		speed: 1500,
+		speed: 2500,
+		cssEase: 'linear',
+		pauseOnHover: false,
+		swipeToSlide: true
+	});
+	target.slick('unslick'); // Not stop when clicked each item.
+	$('#slider-loops').slick({
+		arrows: false,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		dots: false,
+		variableWidth: true,
+		autoplay: true,
+		autoplaySpeed: 0,
+		speed: 2500,
 		cssEase: 'linear',
 		pauseOnHover: false,
 		swipeToSlide: true
 	});
 
+
 	// NEW ARRIVAL
 	$('#slider-newarrival').slick({
 		dots: false,
 		slidesToShow: 4,
-		slidesToScroll: 2,
+		slidesToScroll: 1,
 		autoplay: true,
-		speed: 1500,
-		autoplaySpeed: 1000,
+		autoplaySpeed: 3000,
 		arrows: true,
 		variableWidth: true,
 		pauseOnHover: false,
@@ -314,7 +338,7 @@
 					centerMode: true,
 					slidesToShow: 1,
 					slidesToScroll: 1,
-					speed: 1500,
+					speed: 500,
 				}
 			},
 		] 
@@ -326,8 +350,7 @@
 		slidesToShow: 2,
 		slidesToScroll: 1,
 		autoplay: true,
-		speed: 1000,
-		autoplaySpeed: 2000,
+		autoplaySpeed: 3000,
 		arrows: true,
 		variableWidth: true,
 		pauseOnHover: false,
@@ -336,7 +359,7 @@
 			breakpoint: 768,
 				settings: {
 					slidesToShow: 1,
-					speed: 1500,
+					speed: 500,
 					variableWidth: false
 				}
 			},

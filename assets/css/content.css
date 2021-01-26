@@ -388,11 +388,18 @@
 	position: relative;
 }
 .sec-information .main-information {
+	background: url(../img/information_01.jpg) no-repeat center center / cover;
+	background-attachment: fixed;
+	height: 460px;
+	width: 100%;
+	overflow: hidden;
 	position: absolute;
 	left: 0;
 	top: 0;
-	width: 100%;
 	z-index: 0;
+}
+@supports (-webkit-touch-callout: inherit) {
+	.sec-information .main-information { background-attachment: inherit; }
 }
 .sec-information .main-information:before {
 	background-color: rgba(0, 0, 0, 0.4);
@@ -402,6 +409,10 @@
 	position: absolute;
 	top: 0;
 	left: 0;
+}
+.sec-information .main-information img {
+	opacity: 0;
+	visibility: hidden;
 }
 .sec-information .content-information {
 	position: relative;
@@ -454,8 +465,7 @@
 .sec-information .tab-link li:hover a {
 	color: #FFF;
 }
-.sec-information .tab-link li.active a:after,
-.sec-information .tab-link li a:hover:after {
+.sec-information .tab-link li.active a:after {
 	background: #E10A1F;
 }
 .sec-information .tab-link li span {
@@ -519,6 +529,9 @@
 	transform: translateY(50%);
 }
 @media screen and (max-width: 767px) {
+	.sec-information .main-information {
+		height: 235px;
+	}
 	.sec-information .ttl-information {
 		padding: 40px 0 0;
 	}
@@ -722,9 +735,6 @@
 	display: block;
 	margin: auto;
 	position: relative;
-}
-#arrical-next {
-	background: #E10A1F;	
 }
 #arrical-next:before {
 	transform: rotate(45deg);
@@ -2133,7 +2143,7 @@
 #store-search .main-search .main-item {
 	outline: none;
 	padding: 6px 3px 0;
-	width: 420px;
+	width: 25%;
 }
 #store-search .main-search .main-item img {
 	width: 100%;
@@ -2248,18 +2258,17 @@
 	font-size: 13px;
 	font-weight: 400;
 }
-@media screen and (max-width: 1400px){
-	#store-search .main-search .main-item {
-		width: 320px;
-	}
-}
 @media screen and (max-width: 767px){
 	#store-search {
 		padding: 0 0 42px;
 	}
 	#store-search .main-search .main-item {
+		width: 50%;
 		padding-bottom: 6px;
-		width: 186px;
+	}
+	#store-search .main-search .main-item:first-child,
+	#store-search .main-search .main-item:last-child {
+		display: none!important;
 	}
 	#store-search .search-wrap {
 		border-top: 2px solid #E10A1F;

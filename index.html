@@ -19,6 +19,7 @@
 <link rel="stylesheet" href="assets/css/content.css" media="all">
 <link rel="index contents" href="/" title="ホーム">
 </head>
+
 <body class="top-page">
 
 	<!-- Header -->
@@ -48,8 +49,8 @@
 
 	<!-- SELL & BUY -->
 	<ul class="btn-sellbuy">
-		<li class="btn-sell"><a href="#nav-sell"><span class="jp">売りたい</span><span class="en poppins">SELL</span></a></li>
-		<li class="btn-buy"><a href="#nav-buy"><span class="jp">買いたい</span><span class="en poppins">BUY</span></a></li>
+		<li class="btn-sell"><a href="javascript:voice(0);" rel="#nav-sell"><span class="jp">売りたい</span><span class="en poppins">SELL</span></a></li>
+		<li class="btn-buy"><a href="javascript:voice(0);" rel="#nav-buy"><span class="jp">買いたい</span><span class="en poppins">BUY</span></a></li>
 	</ul>
 	<div class="nav-sellbuy-wrap">
 		<div class="nav-sell nav-box" id="nav-sell">
@@ -98,7 +99,7 @@
 			<div class="gnav-content">
 				<div class="gnav-sellbuy">
 					<nav class="nav-links col">
-						<p class="ttl sell openmenu-sup"><span class="jp">売りたい</span><span class="en poppins">SELL</span></p>
+						<p class="ttl sell openmenu-sup"><span class="jp">売りたい</span><span class="en sp poppins">SELL</span></p>
 						<ul class="sub-list-sellbuy sub-list-01">
 							<li><a href="#" class="over-line over-line-white">初めての方へ</a></li>
 							<li><a href="#" class="over-line over-line-white">店頭買取</a></li>
@@ -108,7 +109,7 @@
 						</ul>
 					</nav>
 					<nav class="nav-links col">
-						<p class="ttl buy openmenu-sup"><span class="jp">買いたい</span><span class="en poppins">BUY</span></p>
+						<p class="ttl buy openmenu-sup"><span class="jp">買いたい</span><span class="en sp poppins">BUY</span></p>
 						<ul class="sub-list-sellbuy sub-list-02">
 							<li><a href="#" class="over-line over-line-white">オンラインストア</a></li>
 							<li><a href="#" class="over-line over-line-white">ヤフオク</a></li>
@@ -166,23 +167,22 @@
 
 	<!-- Main Visual -->
 	<div id="main-visual">
-		<div class="main-visual-inner">
-			<div class="img-visual">
-				<div class="pc"><img src="assets/img/main_visual.jpg" alt="" class="imgfull"></div>
-				<div class="sp"><img src="assets/img/main_visual_sp.jpg" alt="" class="imgfull"></div>
-			</div>
-			<div class="txt-visual fadeup">
-				<p class="txt01"><img src="assets/img/txt_visual.png" alt=""></p>
-				<p class="txt02 poppins">FUN & FASHION<br>REUSE SHOP.</p>
-			</div>
-			<div class="btn-pickup fadeup"><a href="#pickup" class="poppins">PICK UP!</a></div>
-			<div id="scroll" class="pc">
-				<img src="assets/img/SCROLL.svg" alt="">
-				<div class="line-vertical"><span>-</span></div>
-			</div>
+		<ul class="main-slider">
+			<li class="item01"></li>
+			<li class="item02"></li>
+			<li class="item03"></li>
+		</ul>
+		<div class="main-text">
+			<p class="txt01"><img src="assets/img/txt_visual.png" alt=""></p>
+			<p class="txt02 poppins">FUN & FASHION<br>REUSE SHOP.</p>
+		</div>
+		<div class="btn-pickup"><a href="#pickup" class="poppins">PICK UP!</a></div>
+		<div id="scroll" class="pc">
+			<img src="assets/img/SCROLL.svg" alt="">
+			<div class="line-vertical"><span>-</span></div>
 		</div>
 	</div>
-	<div id="slider-loops">
+	<div id="slider-loops" class="autoplay">
 		<div class="item"><img src="assets/img/loop_01.png" alt=""></div>
 		<div class="item"><img src="assets/img/loop_02.png" alt=""></div>
 		<div class="item"><img src="assets/img/loop_03.png" alt=""></div>
@@ -250,10 +250,7 @@
 		<!-- sec-greeting -->
 
 		<div class="sec-information bg-gray">
-			<div class="main-information">
-				<p class="pc"><img src="assets/img/information_01.jpg" alt="" class="imgfull"></p>
-				<p class="sp"><img src="assets/img/information_01_sp.jpg" alt="" class="imgfull"></p>
-			</div>
+			<div class="main-information"><img src="assets/img/information_01.jpg" alt="" class="imgfull"></div>
 			<div class="container">
 				<div class="content-information">
 					<div class="ttl-information">
@@ -604,19 +601,7 @@
 		<!-- sec-purchase-prise -->
 
 		<div id="store-search" class="bg-stripe">
-			<div id="slider-main-search" class="main-search bg-white">
-				<div class="main-item">
-					<img src="assets/img/mainsearch_01.jpg" alt="">
-				</div>
-				<div class="main-item">
-					<img src="assets/img/mainsearch_02.jpg" alt="">
-				</div>
-				<div class="main-item">
-					<img src="assets/img/mainsearch_03.jpg" alt="">
-				</div>
-				<div class="main-item">
-					<img src="assets/img/mainsearch_04.jpg" alt="">
-				</div>
+			<div class="main-search bg-white">
 				<div class="main-item">
 					<img src="assets/img/mainsearch_01.jpg" alt="">
 				</div>
