@@ -1252,6 +1252,9 @@
 #product-list .ttl02.line-yellow:after {
 	background: #FEA439;
 }
+#product-list .ttl02.line-orange:after {
+	background: #FE574A;
+}
 #product-list .list {
 	display: flex;
 	flex-wrap: wrap;
@@ -1974,6 +1977,54 @@
 .sec-howtosell .intro dl dd:not(:last-child) {
 	margin-bottom: 40px;
 }
+.sec-howtosell .intro .btn {
+	border-radius: 3px;
+	color: #FFF;
+	display: block;
+	font-weight: bold;
+	letter-spacing: 0.06em;
+	max-width: 300px;
+	margin-top: 25px;
+	padding: 18px 10px 16px;
+	position: relative;
+	text-align: center;
+	text-decoration: none;
+	transition: all ease-in-out 0.25s;
+}
+.sec-howtosell .intro .download {
+	border-radius: 0;
+}
+.sec-howtosell .intro .btn:after {
+	background: url(../img/icons/icon_arrow_01.png) no-repeat 0 0;
+	background-size: 12px;
+	content: "";
+	height: 12px;
+	width: 12px;
+	display: inline-block;
+	position: absolute;
+	right: 20px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.sec-howtosell .intro .btn:hover {
+    background: #E10A1F;
+}
+.sec-howtosell .intro .btn-document {
+	background: #1A1A1A;
+	border-radius: 30px;
+	color: #FFF;
+	display: inline-block;
+	font-weight: bold;
+	letter-spacing: 0.06em;
+	padding: 8px 20px 6px;
+	position: relative;
+	text-align: center;
+	text-decoration: none;
+	transition: all ease-in-out 0.25s;
+}
+.sec-howtosell .intro .btn-document:hover {
+	background: #E10A1F;
+}
 @media screen and (max-width: 767px){
 	.sec-howtosell {
 		padding: 40px 0;
@@ -1999,6 +2050,14 @@
 	}
 	.sec-howtosell .intro dl dd:not(:last-child) {
 		margin-bottom: 20px;
+	}
+	.sec-howtosell .intro .btn {
+		margin: 25px auto 0;
+		max-width: 266px;
+	}
+	.sec-howtosell .intro .btn-document {
+		font-size: 14px;
+		display: block;
 	}
 }
 
@@ -2493,4 +2552,10 @@
 	.sec-corresponding-area .block-area .ttl {
 		font-size: 22px;
 	}
+}
+
+/* -- -- */
+.sec-coparison {
+	background: url(../img/comparison.jpg) no-repeat center top / cover;
+	padding: 80px 0 100px;
 }
