@@ -141,7 +141,7 @@
 
 		//Fixed have
 
-		$(".btn-sellbuy-fixed li").click(function() {
+		$(".btn-sellbuy-fixed li").hover(function() {
 			if($('.overlay').length <= 0) {
 				jsCreateOverlay();
 			}
@@ -154,16 +154,16 @@
 				.find('.nav-box')
 				.removeClass('is-open'); 
 
-			var $activeNav = $(this).find('a').attr("href");
+			var $activeNav = $(this).find('a').attr("rel");
 			$($activeNav).addClass('is-open');
 			return false;
 		});
-		$("html").click(function(){
+		$("html, .overlay").mouseover(function(){
 			jsRemoveOverlay();
 			$(".nav-box").removeClass("is-open");
 			$(".btn-sellbuy-fixed li").removeClass("active");
 		});
-		$(".nav-sellbuy-wrap, .btn-sellbuy-fixed").click(function(e){
+		$("#header, .nav-sellbuy-wrap, .btn-sellbuy-fixed").mouseover(function(e){
 			e.stopPropagation();
 		});
 	}

@@ -1581,6 +1581,9 @@ a[href^="tel:"] { pointer-events: none; }
 .buying_02-page #keyv {
 	background: url(../img/buying_keyv_02.jpg) no-repeat center center/cover;
 }
+.buying_03-page #keyv {
+	background: url(../img/buying_keyv_03.jpg) no-repeat center center/cover;
+}
 
 @media screen and (max-width: 767px){
 	#keyv.keyv01 {

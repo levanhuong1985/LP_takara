@@ -1849,6 +1849,9 @@
 	margin-right: 1.64%;
 	width: 23.36%;
 }
+.list-points.row-2 .item {
+	margin-bottom: 3.22%;
+}
 .list-points .item {
 	background: #FFF;
 	border-radius: 3px;
@@ -1897,7 +1900,7 @@
 		padding: 40px 0 45px;
 	}
 	.list-points .item {
-		margin-bottom: 35px;
+		margin-bottom: 35px!important;
 		width: 100%!important;
 	}
 	.list-points .item:last-child {
@@ -2445,8 +2448,12 @@
 /* -- -- */
 .sec-corresponding-area {
 	background: url(../img/bg_area.jpg) no-repeat center center/cover;
+	background-attachment: fixed;
 	padding: 80px 0 110px;
 	position: relative;
+}
+@supports (-webkit-touch-callout: inherit) {
+	.sec-corresponding-area { background-attachment: inherit; }
 }
 .sec-corresponding-area .container {
     position: relative;

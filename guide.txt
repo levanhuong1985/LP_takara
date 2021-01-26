@@ -1,5 +1,5 @@
 ■ポイントカード
-point_cart.html
+point_card.html
 
 ■卸・事業者向け
 copporation.html
