@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="{[#SITE_DESCRIPTION#]}">
+<meta name="keywords" content="{[#SITE_KEYWORDS#]}">
+<meta name="format-detection" content="telephone=no">
+<title>LINE査定</title>
+<script type="text/javascript">
+	if ((navigator.userAgent.indexOf('iPhone') > 0) || navigator.userAgent.indexOf('iPod') > 0 || navigator.userAgent.indexOf('Android') > 0) {
+		document.write('<meta name="viewport" content="width=device-width, initial-scale=1">');
+	}else{
+		document.write('<meta name="viewport" content="width=1200">');
+	}
+</script>
+<link rel="stylesheet" href="assets/css/normalize.css" media="all">
+<link rel="stylesheet" href="assets/css/slick.css" media="all">
+<link rel="stylesheet" href="assets/css/style.css" media="all">
+<link rel="stylesheet" href="assets/css/content.css" media="all">
+<link rel="index contents" href="/" title="ホーム">
+</head>
+
+<body class="LINE-page">
+
+	<!-- Header -->
+	<header id="header">
+		<div class="hleft">
+			<h1 id="logo"><a href="/"><img src="assets/img/common/logo.png" alt=""></a></h1>
+			<p id="description" class="pc">ゲーム・フィギュア・トレカ・古着の買取｜お宝創庫</p>
+		</div>
+		<div class="hright">
+			<ul class="btn-sellbuy-fixed pc">
+				<li><a href="javascript:void(0);" rel="#nav-sell">売りたい <span class="en poppins">SELL</span></a></li>
+				<li><a href="javascript:void(0);" rel="#nav-buy">買いたい <span class="en poppins">BUY</span></a></li>
+			</ul>
+			<div class="hnav pc"><a href="#">マイページ</a>　/　<a href="#">お問い合わせ</a></div>
+			<div class="hcontact pc"><a href="tel:0120-00-0000" class="tel poppins">0120-00-0000</a><span class="time">10:00~18:30（土日祝日もOK）</span></div>
+			<div class="hbtns sp">
+				<ul>
+					<li><a href="#"><img src="assets/img/common/icon_LINE_sp.png" alt=""><span>LINE査定</span></a></li>
+					<li><a href="tel:0120-00-0000"><img src="assets/img/common/icon_tel_sp.png" alt=""><span>TEL</span></a></li>
+					<li><a href="#"><img src="assets/img/common/icon_mypage_sp.png" alt=""><span>マイページ</span></a></li>
+				</ul>
+			</div>
+			<div class="openmenu"><span class="poppins pc">MENU</span></div>
+		</div>
+	</header>
+	<!-- End Header -->
+
+	<!-- SELL & BUY -->
+	<ul class="btn-sellbuy">
+		<li class="btn-sell"><a href="javascript:voice(0);" rel="#nav-sell"><span class="jp">売りたい</span><span class="en poppins">SELL</span></a></li>
+		<li class="btn-buy"><a href="javascript:voice(0);" rel="#nav-buy"><span class="jp">買いたい</span><span class="en poppins">BUY</span></a></li>
+	</ul>
+	<div class="nav-sellbuy-wrap">
+		<div class="nav-sell nav-box" id="nav-sell">
+			<div class="w1000">
+				<ul class="nav-sell-primary">
+					<li><a href="#" class="imgover"><span class="icon"><img src="assets/img/common/icon_guide.png" alt=""></span><span>初めての方へ</span></a></li>
+					<li><a href="#" class="imgover"><span class="icon"><img src="assets/img/common/icon_find.png" alt=""></span><span>店舗を探す</span></a></li>
+					<li><a href="#" class="imgover"><span class="icon"><img src="assets/img/common/icon_LINE.png" alt=""></span><span>LINE査定</span></a></li>
+					<li><a href="#" class="imgover"><span class="icon"><img src="assets/img/common/icon_store.png" alt=""></span><span>店頭買取</span></a></li>
+					<li><a href="#" class="imgover"><span class="icon"><img src="assets/img/common/icon_delivery.png" alt=""></span><span>宅配買取</span></a></li>
+					<li><a href="#" class="imgover"><span class="icon"><img src="assets/img/common/icon_visit.png" alt=""></span><span>出張買取</span></a></li>
+					<li class="sp"><a href="#"><span>買取取扱いアイテム</span></a></li>
+				</ul>
+				<ul class="nav-sell-secondary pc">
+					<li><a href="#" class="imgover"><span class="icon"><img src="assets/img/common/icon_game.png" alt=""></span><span>ゲーム</span></a></li>
+					<li><a href="#" class="imgover"><span class="icon"><img src="assets/img/common/icon_tradingcard.png" alt=""></span><span>トレーディング<br>カード</span></a></li>
+					<li><a href="#" class="imgover"><span class="icon"><img src="assets/img/common/icon_figure.png" alt=""></span><span>フィギュア</span></a></li>
+					<li><a href="#" class="imgover"><span class="icon"><img src="assets/img/common/icon_hobby.png" alt=""></span><span>ホビー</span></a></li>
+					<li><a href="#" class="imgover"><span class="icon"><img src="assets/img/common/icon_plasticmodel.png" alt=""></span><span>プラモデル</span></a></li>
+					<li><a href="#" class="imgover"><span class="icon"><img src="assets/img/common/icon_fashion.png" alt=""></span><span>古着</span></a></li>
+					<li><a href="#" class="imgover"><span class="icon"><img src="assets/img/common/icon_brandwatch.png" alt=""></span><span>ブランド・<br>時計</span></a></li>
+					<li><a href="#" class="imgover"><span class="icon"><img src="assets/img/common/icon_application.png" alt=""></span><span>家電</span></a></li>
+					<li><a href="#" class="imgover"><span class="icon"><img src="assets/img/common/icon_outdoor.png" alt=""></span><span>アウトドア・<br>スポーツ</span></a></li>
+					<li><a href="#" class="imgover"><span class="icon"><img src="assets/img/common/icon_liquor.png" alt=""></span><span>お酒</span></a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="nav-buy nav-box" id="nav-buy">
+			<div class="w1000">
+				<ul class="nav-buy-primary">
+					<li><a href="#" class="imgover"><span class="icon"><img src="assets/img/common/icon_find.png" alt=""></span><span>店舗を探す</span></a></li>
+					<li><a href="#" class="imgover"><span class="icon"><img src="assets/img/common/icon_cart.png" alt=""></span><span>オンラインストア</span></a></li>
+					<li><a href="#" class="imgover"><span class="icon"><img src="assets/img/common/icon_yahoo.png" alt=""></span><span>ヤフオク！</span></a></li>
+					<li><a href="#" class="imgover"><span class="icon"><img src="assets/img/common/icon_rakuten.png" alt=""></span><span>楽天市場</span></a></li>
+					<li><a href="#" class="imgover"><span class="icon"><img src="assets/img/common/icon_fammys.png" alt=""></span><span>ファミーズ</span></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- End SELL & BUY -->
+
+	<!-- Main Menu -->
+	<div id="gnav">		
+		<div class="w1000">
+			<div class="gnav-content">
+				<div class="gnav-sellbuy">
+					<nav class="nav-links col">
+						<p class="ttl sell openmenu-sup"><span class="jp">売りたい</span><span class="en sp poppins">SELL</span></p>
+						<ul class="sub-list-sellbuy sub-list-01">
+							<li><a href="#" class="over-line over-line-white">初めての方へ</a></li>
+							<li><a href="#" class="over-line over-line-white">店頭買取</a></li>
+							<li><a href="#" class="over-line over-line-white">出張買取</a></li>
+							<li><a href="#" class="over-line over-line-white">宅配買取</a></li>
+							<li><a href="#" class="over-line over-line-white">LINE査定</a></li>
+						</ul>
+					</nav>
+					<nav class="nav-links col">
+						<p class="ttl buy openmenu-sup"><span class="jp">買いたい</span><span class="en sp poppins">BUY</span></p>
+						<ul class="sub-list-sellbuy sub-list-02">
+							<li><a href="#" class="over-line over-line-white">オンラインストア</a></li>
+							<li><a href="#" class="over-line over-line-white">ヤフオク</a></li>
+							<li><a href="#" class="over-line over-line-white">楽天市場</a></li>
+							<li><a href="#" class="over-line over-line-white">ファミーズ</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="gnav-site">
+					<nav class="nav-links col">
+						<ul>
+							<li><a href="#" class="over-line over-line-white">トップ</a></li>
+							<li><a href="#" class="over-line over-line-white">店舗を探す</a></li>
+							<li><a href="#" class="over-line over-line-white">買取取扱いアイテム</a></li>
+							<li><a href="#" class="over-line over-line-white">買取実績一覧</a></li>
+							<li><a href="#" class="over-line over-line-white">買取相場表</a></li>
+							<li><a href="#" class="over-line over-line-white">卸・事業者様へ</a></li>
+							<li><a href="#" class="over-line over-line-white">お知らせ</a></li>
+						</ul>
+					</nav>
+					<nav class="nav-links col">
+						<ul>
+							<li><a href="#" class="over-line over-line-white">お客様の声</a></li>
+							<li><a href="#" class="over-line over-line-white">買取コラム</a></li>
+							<li><a href="#" class="over-line over-line-white">イベント・⼤会情報</a></li>
+							<li><a href="#" class="over-line over-line-white">ポイントカード利⽤規約</a></li>
+							<li><a href="#" class="over-line over-line-white">店舗物件募集</a></li>
+							<li><a href="#" class="over-line over-line-white">お問い合わせ</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+			<ul class="list-banners pc">
+				<li>
+					<span class="ttl">運営会社</span>
+					<a href="#"><img src="assets/img/common/bnr_01.jpg" alt=""></a>
+				</li>
+				<li>
+					<span class="ttl">採用情報</span>
+					<a href="#"><img src="assets/img/common/bnr_02.jpg" alt=""></a>
+				</li>
+			</ul>
+			<nav class="site-links pc">
+				<ul>
+					<li><a href="#" class="over-line over-line-white">会社概要</a></li>
+					<li><a href="#" class="over-line over-line-white">プライバシーポリシー</a></li>
+					<li><a href="#" class="over-line over-line-white">特定商取引法及び古物営業法に基づく表記</a></li>
+					<li><a href="#" class="over-line over-line-white">サイトマップ</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div class="closemenu"><span class="poppins">CLOSE</span></div>
+	</div>
+	<!-- End Main Menu -->
+
+	<!-- Right fixed -->
+	<div id="side-menu" class="pc">
+		<ul>
+			<li class="menu-LINE"><a href="#" class="imgover"><img src="assets/img/icons/icon_LINE.png" alt=""><span>LINE査定</span></a></li>
+			<li class="menu-store"><a href="#" class="imgover"><img src="assets/img/icons/icon_store.png" alt=""><span>店頭買取</span></a></li>
+			<li class="menu-delivery"><a href="#" class="imgover"><img src="assets/img/icons/icon_delivery.png" alt=""><span>宅配買取</span></a></li>
+			<li class="menu-visit"><a href="#" class="imgover"><img src="assets/img/icons/icon_visit.png" alt=""><span>出張買取</span></a></li>
+			<li class="menu-price"><a href="#" class="imgover"><img src="assets/img/icons/icon_price.png" alt=""><span>買取相場</span></a></li>
+		</ul>
+	</div>
+
+	<div id="side-contact" class="pc">
+		<p class="ttl cl-red">買取のご相談はこちら！</p>
+		<p class="txt"><a href="tel:0120-00-0000" class="tel poppins">0120-00-0000</a><span class="time">10:00~18:30（土日祝日もOK）</span></p>
+		<p><a href="contact.html" class="btn">メールでのお問い合わせ</a></p>
+	</div>
+	<!-- End Right fixed -->
+
+	<div id="keyv" class="keyv01">
+		<div class="container">
+			<div class="catch">
+				<div class="in pos-rel">
+					<h2 class="ttl fadeup"><span class="line01 solid poppins">スマホで簡単すぐ分かる！</span><br><span class="line02">簡単LINE査定</span></h2>
+					<ul class="steps">
+						<li class="fadeup"><span>撮影<br>する</span></li>
+						<li class="fadeup"><span>写真を<br>送る</span></li>
+						<li class="fadeup"><span>すぐに<br>査定</span></li>
+					</ul>
+					<!-- <p class="phone"><img src="assets/img/LINE_keyv.png" alt=""></p> -->
+				</div>
+				
+			</div>
+		</div>
+	</div><!-- #keyv- -->
+
+	<ul id="breadcrumb" class="fadeup">
+		<li><a href="index.html">HOME</a></li>
+		<li>簡単LINE査定</li>
+	</ul><!-- #breadcrumb -->
+
+	<main id="contents">
+
+		<div class="setup_LINE">
+			<div class="container">
+				<h3 class="ttl fadeup">まずは<span class="cl-green">LINE</span>で<br class="sp"><span class="cl-green">友だち追加</span>をしよう！</h3>
+				<p class="fadeup"><a href="#" class="btn"><img src="assets/img/icons/icon_LINE_o.png" alt=""><span>友だち追加はこちら</span></a></p>
+				<p class="note fadeup">※営業時間外に頂いた写真査定は翌営業日に順次ご回答いたします</p>
+				<div class="line-vertical-green fadeup">|</div>
+				<div class="search-LINE">
+					<p class="txt fadeup"><span class="cl-green">「@otakarasouko」</span>をID検索、<br class="sp">またはQRコートをスキャン</p>
+					<ul>
+						<li class="fadeup">
+							<p class="ttl-box">QRコードで追加</p>
+							<p class="qrcode"><img src="assets/img/LINE_qrcode.png" alt=""></p>
+							<p class="txt-box">上記の「QRコード」を<br>スキャンして追加</p>
+						</li>
+						<li class="fadeup">
+							<p class="ttl-box">ID検索で追加</p>
+							<p class="txt-box">IDボックスに<span class="cl-green">「@otakarasouko」</span>と<br class="sp">入力し<br class="pc">確定検索して追加</p>
+							<p class="mail-id"><img src="assets/img/LINE_ID.png" alt=""></p>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div class="sec-howtosell bg-gray">
+			<div class="container">
+				<div class="cm-headline01 fadeup">
+					<p class="en cl-green poppins">- HOW TO SELL -</p>
+					<h3 class="ttl">“LINE査定”の流れ</h3>
+				</div>
+				<div class="list-steps">
+					<div class="item fadeup">
+						<div class="img"><img src="assets/img/LINE_01.jpg" alt=""></div>
+						<div class="info">
+							<p class="ttl"><span class="cl-green poppins">STEP.1</span>商品を撮影する</p>
+							<p class="txt">商品の全体像を撮影してください。<br>全体像の1枚だけでなく、型番表記の拡大写真や、キズの状態などがわかる部分の写真、付属品など、詳細な画像があるほど、正確なお見積り金額がご提示できます。</p>
+						</div>
+						<div class="icon-down green">▼</div>
+					</div>
+					<div class="item fadeup">
+						<div class="img"><img src="assets/img/LINE_02.jpg" alt=""></div>
+						<div class="info">
+							<p class="ttl"><span class="cl-green poppins">STEP.2</span>写真を送る</p>
+							<p class="txt">お品物のブランド名やモデル名、型番、購入時期、キズなどの状態、付属品などを記載していただけると、より正確な査定金額をご提示できます。</p>
+						</div>
+						<div class="icon-down green">▼</div>
+					</div>
+					<div class="item fadeup">
+						<div class="img"><img src="assets/img/LINE_03.jpg" alt=""></div>
+						<div class="info">
+							<p class="ttl"><span class="cl-green poppins">STEP.3</span>査定結果が届く</p>
+							<p class="txt mb20">担当者が確認後、必要に応じてコメントを返信させていただきます。<br>
+							査定ができる情報が揃い次第、1営業日以内に査定金額をお知らせします。</p>
+							<p class="note cl-red">※受付時間　10：00〜18：00 <br>
+							※営業時間外の査定に関しては翌営業日に返信いたします。</p>
+						</div>
+					</div>
+				</div>
+				<div class="delivery-contact fadeup">
+					<div class="center">
+						<p class="reception-time">受付時間　10：00〜18：00</p>
+						<p>※営業時間外の査定に関しては<br class="sp">良く営業日にご返信いたします</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="sec-point bg-white">
+			<div class="container">
+				<div class="cm-headline01 fadeup">
+					<p class="en cl-green poppins">- POINT -</p>
+					<h3 class="ttl">撮影するポイント</h3>
+					<p class="txt">各ジャンル毎に撮影するポイントがございます。<br>
+					正確なお見積りを行うために 以下を参照に<br class="sp">撮影いただきますようお願いいたします。<br>
+					※メーカー・品名・状態などは商品情報<br class="sp">コメント欄にご入力ください。</p>
+				</div>
+				<ul class="tab-link fadeup">
+					<li  class="active"><a href="#tab-point-01">ブランドバックの<br class="sp">場合</a></li>
+					<li><a href="#tab-point-02">ブランド財布の<br class="sp">場合</a></li>
+					<li><a href="#tab-point-03">ブランド時計の<br class="sp">場合</a></li>
+					<li><a href="#tab-point-04">アクセサリーの<br class="sp">場合</a></li>
+					<li><a href="#tab-point-05">洋服の<br class="sp">場合</a></li>
+					<li><a href="#tab-point-06">靴の<br class="sp">場合</a></li>
+					<li><a href="#tab-point-07">フィギュアの<br class="sp">場合</a></li>
+					<li><a href="#tab-point-08">エアガンの<br class="sp">場合</a></li>
+					<li><a href="#tab-point-09">トレーディング<br class="sp">カードの場合</a></li>
+					<li><a href="#tab-point-10">ゲーム・ブル<br class="sp">ーレイの場合</a></li>
+					<li><a href="#tab-point-11">家電(小型)の<br class="sp">場合</a></li>
+					<li><a href="#tab-point-12">家電(大型)の<br class="sp">場合</a></li>
+					<li><a href="#tab-point-13">お酒の<br class="sp">場合</a></li>
+					<li><a href="#tab-point-14">工具の<br class="sp">場合</a></li>
+					<li><a href="#tab-point-15">楽器の<br class="sp">場合</a></li>
+				</ul>
+				<div class="tab-content fadeup">
+					<div class="block-point bg-green tab-box" id="tab-point-01">
+						<h4 class="ttl">ブランドバックの場合</h4>
+						<div class="block-point-in bg-white">
+							<div class="list-point">
+								<div class="item">
+									<figure>
+										<img src="assets/img/point_01.jpg" alt="">
+										<figcaption>全体写真</figcaption>
+									</figure>
+								</div>
+								<div class="item">
+									<figure>
+										<img src="assets/img/point_02.jpg" alt="">
+										<figcaption>別角度・裏側の写真</figcaption>
+									</figure>
+								</div>
+								<div class="item">
+									<figure>
+										<img src="assets/img/point_03.jpg" alt="">
+										<figcaption>タグ・ロゴがわかる写真</figcaption>
+									</figure>
+								</div>
+								<div class="item">
+									<figure>
+										<img src="assets/img/point_04.jpg" alt="">
+										<figcaption>箱・内容物・付属品など</figcaption>
+									</figure>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="block-point bg-green tab-box" id="tab-point-02">
+						<h4 class="ttl">ブランド財布の場合</h4>
+						<div class="block-point-in bg-white">
+							<div class="list-point">
+								<div class="item">
+									<figure>
+										<img src="assets/img/point_01.jpg" alt="">
+										<figcaption>全体写真</figcaption>
+									</figure>
+								</div>
+								<div class="item">
+									<figure>
+										<img src="assets/img/point_02.jpg" alt="">
+										<figcaption>別角度・裏側の写真</figcaption>
+									</figure>
+								</div>
+								<div class="item">
+									<figure>
+										<img src="assets/img/point_03.jpg" alt="">
+										<figcaption>タグ・ロゴがわかる写真</figcaption>
+									</figure>
+								</div>
+								<div class="item">
+									<figure>
+										<img src="assets/img/point_04.jpg" alt="">
+										<figcaption>箱・内容物・付属品など</figcaption>
+									</figure>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="block-point bg-green tab-box" id="tab-point-03">
+						<h4 class="ttl">ブランド時計の場合</h4>
+						<div class="block-point-in bg-white">
+							<div class="list-point">
+								<div class="item">
+									<figure>
+										<img src="assets/img/point_01.jpg" alt="">
+										<figcaption>全体写真</figcaption>
+									</figure>
+								</div>
+								<div class="item">
+									<figure>
+										<img src="assets/img/point_02.jpg" alt="">
+										<figcaption>別角度・裏側の写真</figcaption>
+									</figure>
+								</div>
+								<div class="item">
+									<figure>
+										<img src="assets/img/point_03.jpg" alt="">
+										<figcaption>タグ・ロゴがわかる写真</figcaption>
+									</figure>
+								</div>
+								<div class="item">
+									<figure>
+										<img src="assets/img/point_04.jpg" alt="">
+										<figcaption>箱・内容物・付属品など</figcaption>
+									</figure>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="block-point bg-green tab-box" id="tab-point-04">
+						<h4 class="ttl">アクセサリーの場合</h4>
+						<div class="block-point-in bg-white">
+							<div class="list-point">
+								<div class="item">
+									<figure>
+										<img src="assets/img/point_01.jpg" alt="">
+										<figcaption>全体写真</figcaption>
+									</figure>
+								</div>
+								<div class="item">
+									<figure>
+										<img src="assets/img/point_02.jpg" alt="">
+										<figcaption>別角度・裏側の写真</figcaption>
+									</figure>
+								</div>
+								<div class="item">
+									<figure>
+										<img src="assets/img/point_03.jpg" alt="">
+										<figcaption>タグ・ロゴがわかる写真</figcaption>
+									</figure>
+								</div>
+								<div class="item">
+									<figure>
+										<img src="assets/img/point_04.jpg" alt="">
+										<figcaption>箱・内容物・付属品など</figcaption>
+									</figure>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="block-point bg-green tab-box" id="tab-point-05">
+						<h4 class="ttl">洋服の場合</h4>
+						<div class="block-point-in bg-white">
+							<div class="list-point">
+								<div class="item">
+									<figure>
+										<img src="assets/img/point_01.jpg" alt="">
+										<figcaption>全体写真</figcaption>
+									</figure>
+								</div>
+								<div class="item">
+									<figure>
+										<img src="assets/img/point_02.jpg" alt="">
+										<figcaption>別角度・裏側の写真</figcaption>
+									</figure>
+								</div>
+								<div class="item">
+									<figure>
+										<img src="assets/img/point_03.jpg" alt="">
+										<figcaption>タグ・ロゴがわかる写真</figcaption>
+									</figure>
+								</div>
+								<div class="item">
+									<figure>
+										<img src="assets/img/point_04.jpg" alt="">
+										<figcaption>箱・内容物・付属品など</figcaption>
+									</figure>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="block-point bg-green tab-box" id="tab-point-06">
+						<h4 class="ttl">靴の場合</h4>
+						<div class="block-point-in bg-white">
+							<div class="list-point">
+								<div class="item">
+									<figure>
+										<img src="assets/img/point_01.jpg" alt="">
+										<figcaption>全体写真</figcaption>
+									</figure>
+								</div>
+								<div class="item">
+									<figure>
+										<img src="assets/img/point_02.jpg" alt="">
+										<figcaption>別角度・裏側の写真</figcaption>
+									</figure>
+								</div>
+								<div class="item">
+									<figure>
+										<img src="assets/img/point_03.jpg" alt="">
+										<figcaption>タグ・ロゴがわかる写真</figcaption>
+									</figure>
+								</div>
+								<div class="item">
+									<figure>
+										<img src="assets/img/point_04.jpg" alt="">
+										<figcaption>箱・内容物・付属品など</figcaption>
+									</figure>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="block-point bg-green tab-box" id="tab-point-07">
+						<h4 class="ttl">フィギュアの場合</h4>
+						<div class="block-point-in bg-white">
+							<div class="list-point">
+								<div class="item">
+									<figure>
+										<img src="assets/img/point_01.jpg" alt="">
+										<figcaption>全体写真</figcaption>
+									</figure>
+								</div>
+								<div class="item">
+									<figure>
+										<img src="assets/img/point_02.jpg" alt="">
+										<figcaption>別角度・裏側の写真</figcaption>
+									</figure>
+								</div>
+								<div class="item">
+									<figure>
+										<img src="assets/img/point_03.jpg" alt="">
+										<figcaption>タグ・ロゴがわかる写真</figcaption>
+									</figure>
+								</div>
+								<div class="item">
+									<figure>
+										<img src="assets/img/point_04.jpg" alt="">
+										<figcaption>箱・内容物・付属品など</figcaption>
+									</figure>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="block-point bg-green tab-box" id="tab-point-08">
+						<h4 class="ttl">エアガンの場合</h4>
+						<div class="block-point-in bg-white">
+							<div class="list-point">
+								<div class="item">
+									<figure>
+										<img src="assets/img/point_01.jpg" alt="">
+										<figcaption>全体写真</figcaption>
+									</figure>
+								</div>
+								<div class="item">
+									<figure>
+										<img src="assets/img/point_02.jpg" alt="">
+										<figcaption>別角度・裏側の写真</figcaption>
+									</figure>
+								</div>
+								<div class="item">
+									<figure>
+										<img src="assets/img/point_03.jpg" alt="">
+										<figcaption>タグ・ロゴがわかる写真</figcaption>
+									</figure>
+								</div>
+								<div class="item">
+									<figure>
+										<img src="assets/img/point_04.jpg" alt="">
+										<figcaption>箱・内容物・付属品など</figcaption>
+									</figure>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="block-point bg-green tab-box" id="tab-point-09">
+						<h4 class="ttl">トレーディングカードの場合</h4>
+						<div class="block-point-in bg-white">
+							<div class="list-point">
+								<div class="item">
+									<figure>
+										<img src="assets/img/point_01.jpg" alt="">
+										<figcaption>全体写真</figcaption>
+									</figure>
+								</div>
+								<div class="item">
+									<figure>
+										<img src="assets/img/point_02.jpg" alt="">
+										<figcaption>別角度・裏側の写真</figcaption>
+									</figure>
+								</div>
+								<div class="item">
+									<figure>
+										<img src="assets/img/point_03.jpg" alt="">
+										<figcaption>タグ・ロゴがわかる写真</figcaption>
+									</figure>
+								</div>
+								<div class="item">
+									<figure>
+										<img src="assets/img/point_04.jpg" alt="">
+										<figcaption>箱・内容物・付属品など</figcaption>
+									</figure>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="block-point bg-green tab-box" id="tab-point-10">
+						<h4 class="ttl">ゲーム・ブルーレイの場合</h4>
+						<div class="block-point-in bg-white">
+							<div class="list-point">
+								<div class="item">
+									<figure>
+										<img src="assets/img/point_01.jpg" alt="">
+										<figcaption>全体写真</figcaption>
+									</figure>
+								</div>
+								<div class="item">
+									<figure>
+										<img src="assets/img/point_02.jpg" alt="">
+										<figcaption>別角度・裏側の写真</figcaption>
+									</figure>
+								</div>
+								<div class="item">
+									<figure>
+										<img src="assets/img/point_03.jpg" alt="">
+										<figcaption>タグ・ロゴがわかる写真</figcaption>
+									</figure>
+								</div>
+								<div class="item">
+									<figure>
+										<img src="assets/img/point_04.jpg" alt="">
+										<figcaption>箱・内容物・付属品など</figcaption>
+									</figure>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="block-point bg-green tab-box" id="tab-point-11">
+						<h4 class="ttl">家電(小型)の場合</h4>
+						<div class="block-point-in bg-white">
+							<div class="list-point">
+								<div class="item">
+									<figure>
+										<img src="assets/img/point_01.jpg" alt="">
+										<figcaption>全体写真</figcaption>
+									</figure>
+								</div>
+								<div class="item">
+									<figure>
+										<img src="assets/img/point_02.jpg" alt="">
+										<figcaption>別角度・裏側の写真</figcaption>
+									</figure>
+								</div>
+								<div class="item">
+									<figure>
+										<img src="assets/img/point_03.jpg" alt="">
+										<figcaption>タグ・ロゴがわかる写真</figcaption>
+									</figure>
+								</div>
+								<div class="item">
+									<figure>
+										<img src="assets/img/point_04.jpg" alt="">
+										<figcaption>箱・内容物・付属品など</figcaption>
+									</figure>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="block-point bg-green tab-box" id="tab-point-12">
+						<h4 class="ttl">家電(大型)の場合</h4>
+						<div class="block-point-in bg-white">
+							<div class="list-point">
+								<div class="item">
+									<figure>
+										<img src="assets/img/point_01.jpg" alt="">
+										<figcaption>全体写真</figcaption>
+									</figure>
+								</div>
+								<div class="item">
+									<figure>
+										<img src="assets/img/point_02.jpg" alt="">
+										<figcaption>別角度・裏側の写真</figcaption>
+									</figure>
+								</div>
+								<div class="item">
+									<figure>
+										<img src="assets/img/point_03.jpg" alt="">
+										<figcaption>タグ・ロゴがわかる写真</figcaption>
+									</figure>
+								</div>
+								<div class="item">
+									<figure>
+										<img src="assets/img/point_04.jpg" alt="">
+										<figcaption>箱・内容物・付属品など</figcaption>
+									</figure>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="block-point bg-green tab-box" id="tab-point-13">
+						<h4 class="ttl">お酒の場合</h4>
+						<div class="block-point-in bg-white">
+							<div class="list-point">
+								<div class="item">
+									<figure>
+										<img src="assets/img/point_01.jpg" alt="">
+										<figcaption>全体写真</figcaption>
+									</figure>
+								</div>
+								<div class="item">
+									<figure>
+										<img src="assets/img/point_02.jpg" alt="">
+										<figcaption>別角度・裏側の写真</figcaption>
+									</figure>
+								</div>
+								<div class="item">
+									<figure>
+										<img src="assets/img/point_03.jpg" alt="">
+										<figcaption>タグ・ロゴがわかる写真</figcaption>
+									</figure>
+								</div>
+								<div class="item">
+									<figure>
+										<img src="assets/img/point_04.jpg" alt="">
+										<figcaption>箱・内容物・付属品など</figcaption>
+									</figure>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="block-point bg-green tab-box" id="tab-point-14">
+						<h4 class="ttl">工具の場合</h4>
+						<div class="block-point-in bg-white">
+							<div class="list-point">
+								<div class="item">
+									<figure>
+										<img src="assets/img/point_01.jpg" alt="">
+										<figcaption>全体写真</figcaption>
+									</figure>
+								</div>
+								<div class="item">
+									<figure>
+										<img src="assets/img/point_02.jpg" alt="">
+										<figcaption>別角度・裏側の写真</figcaption>
+									</figure>
+								</div>
+								<div class="item">
+									<figure>
+										<img src="assets/img/point_03.jpg" alt="">
+										<figcaption>タグ・ロゴがわかる写真</figcaption>
+									</figure>
+								</div>
+								<div class="item">
+									<figure>
+										<img src="assets/img/point_04.jpg" alt="">
+										<figcaption>箱・内容物・付属品など</figcaption>
+									</figure>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="block-point bg-green tab-box" id="tab-point-15">
+						<h4 class="ttl">楽器の場合</h4>
+						<div class="block-point-in bg-white">
+							<div class="list-point">
+								<div class="item">
+									<figure>
+										<img src="assets/img/point_01.jpg" alt="">
+										<figcaption>全体写真</figcaption>
+									</figure>
+								</div>
+								<div class="item">
+									<figure>
+										<img src="assets/img/point_02.jpg" alt="">
+										<figcaption>別角度・裏側の写真</figcaption>
+									</figure>
+								</div>
+								<div class="item">
+									<figure>
+										<img src="assets/img/point_03.jpg" alt="">
+										<figcaption>タグ・ロゴがわかる写真</figcaption>
+									</figure>
+								</div>
+								<div class="item">
+									<figure>
+										<img src="assets/img/point_04.jpg" alt="">
+										<figcaption>箱・内容物・付属品など</figcaption>
+									</figure>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="precautions">
+					<h4 class="ttl">注意事項</h4>
+					<div class="in">
+						<p>お品物に合わせた専門の査定担当者が確認するため、内容によっては通常よりお時間がかかる場合がございます。<br>査定金額はあくまで目安です。実際に商品を拝見させていただいた際の査定が優先されます。<br>
+						お品物によっては、実物を拝見しないと査定金額をお伝えできない場合がございます。</p>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<div id="sec-contact">
+			<div class="sec-contact-in">
+				<div class="w1000">
+					<ul class="list-banners">
+						<li><a href="tel:0120-0000-000"><img src="assets/img/bnr_contact_01.png" alt="" class="pc"><img src="assets/img/bnr_contact_01_sp.png" alt="" class="sp"></a></li>
+						<li><a href="#" target="_blank"><img src="assets/img/bnr_contact_02.png" alt="" class="pc"><img src="assets/img/bnr_contact_02_sp.png" alt="" class="sp"></a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="sec-contact-in bg-transparent">
+				<div class="w1000">
+					<div class="method">
+						<h3 class="ttl"><span>選べる買取方法</span></h3>
+						<ul class="list-buttons">
+							<li><a href="#" class="store imgover">
+								<div class="icon"><img src="assets/img/icons/icon_store_aqua.png" alt="" class=""></div>
+								<div>
+									<span class="jp">店頭買取</span>
+									<span class="en poppins">STORE</span>
+								</div>
+							</a></li>
+							<li><a href="#" class="delivery imgover">
+								<div class="icon"><img src="assets/img/icons/icon_delivery_org.png" alt="" class=""></div>
+								<div>
+									<span class="jp">宅配買取</span>
+									<span class="en poppins">DELIVERY</span>
+								</div>
+							</a></li>
+							<li><a href="#" class="visit imgover">
+								<div class="icon"><img src="assets/img/icons/icon_visit_yellow.png" alt="" class=""></div>
+								<div>
+									<span class="jp">出張買取</span>
+									<span class="en poppins">VISIT</span>
+								</div>
+							</a></li>
+						</ul>
+						<p class="txt">お客様のライフスタイルに合わせて、3つの買取方<br class="sp">法からお選びいただけます。<br>お客様の「売りたい」気持ちに応えます。</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</main>
+	<!-- End Contents -->
+
+	<!-- Footer -->
+	<footer id="footer">
+		<div class="front bg-white">
+			<div class="container">
+				<p class="flogo"><img src="assets/img/common/flogo.png" alt=""></p>
+				<nav class="flinks">
+					<ul>
+						<li><a href="#" class="over-line">地域密着型</a></li>
+						<li><a href="#" class="over-line">アソビ</a></li>
+						<li><a href="#" class="over-line">ファッション</a></li>
+						<li><a href="#" class="over-line">リユースショップ</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div id="pagetop"><span class="poppins">PAGE TOP</span></div>
+		</div>
+		<div class="fsection bg-black">
+			<div class="container">
+				<nav class="fnav pc">
+					<ul class="col">
+						<li><a href="#" class="over-line over-line-white">トップ</a></li>
+						<li><a href="#" class="over-line over-line-white">初めての方へ</a></li>
+						<li><a href="#" class="over-line over-line-white">店舗を探す</a></li>
+						<li><a href="#" class="over-line over-line-white">買取取扱いアイテム</a></li>
+						<li><a href="#" class="over-line over-line-white">買取実績一覧</a></li>
+					</ul>
+					<ul class="col">
+						<li><a href="#" class="over-line over-line-white">買取相場表</a></li>
+						<li><a href="#" class="over-line over-line-white">卸・事業者様へ</a></li>
+						<li><a href="#" class="over-line over-line-white">お知らせ</a></li>
+						<li><a href="#" class="over-line over-line-white">お客様の声</a></li>
+						<li><a href="#" class="over-line over-line-white">コラム</a></li>
+					</ul>
+					<ul class="col">
+						<li><a href="#" class="over-line over-line-white">イベント・⼤会情報</a></li>
+						<li><a href="#" class="over-line over-line-white">ポイントカード利⽤規約</a></li>
+						<li><a href="#" class="over-line over-line-white">店舗物件募集</a></li>
+						<li><a href="#" class="over-line over-line-white">お問い合わせ</a></li>
+					</ul>
+				</nav>
+				<nav class="fnav sp">
+					<ul class="col">
+						<li><a href="#" class="over-line over-line-white">トップ</a></li>
+						<li><a href="#" class="over-line over-line-white">初めての方へ</a></li>
+						<li><a href="#" class="over-line over-line-white">店舗を探す</a></li>
+						<li><a href="#" class="over-line over-line-white">買取取扱いアイテム</a></li>
+						<li><a href="#" class="over-line over-line-white">買取実績一覧</a></li>
+						<li><a href="#" class="over-line over-line-white">買取相場表</a></li>
+						<li><a href="#" class="over-line over-line-white">卸・事業者様へ</a></li>
+						<li><a href="#" class="over-line over-line-white">お知らせ</a></li>
+					</ul>
+					<ul class="col">
+						<li><a href="#" class="over-line over-line-white">お客様の声</a></li>
+						<li><a href="#" class="over-line over-line-white">コラム</a></li>
+						<li><a href="#" class="over-line over-line-white">iPhone修理料⾦表</a></li>
+						<li><a href="#" class="over-line over-line-white">イベント・⼤会情報</a></li>
+						<li><a href="#" class="over-line over-line-white">ポイントカード利⽤規約</a></li>
+						<li><a href="#" class="over-line over-line-white">店舗物件募集</a></li>
+						<li><a href="#" class="over-line over-line-white">お問い合わせ</a></li>
+					</ul>
+				</nav>
+
+				<div class="fbanners">
+					<ul>
+						<li>
+							<p class="ttl">運営会社</p>
+							<p class="img"><a href="#" target="_blank"><img src="assets/img/common/fbnr_01.jpg" alt=""></a></p>
+						</li>
+						<li>
+							<p class="ttl">採用情報</p>
+							<p class="img"><a href="#" target="_blank"><img src="assets/img/common/fbnr_02.jpg" alt=""></a></p>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="end bg-black">
+			<div class="container">
+				<p class="ttl sp">グループサイト</p>
+				<ul class="list-logos">
+					<li><a href="#" target="_blank"><img src="assets/img/common/flogo_01.png" alt=""></a></li>
+					<li><a href="#" target="_blank"><img src="assets/img/common/flogo_02.png" alt=""></a></li>
+					<li><a href="#" target="_blank"><img src="assets/img/common/flogo_03.png" alt=""></a></li>
+					<li><a href="#" target="_blank"><img src="assets/img/common/flogo_04.png" alt=""></a></li>
+					<li><a href="#" target="_blank"><img src="assets/img/common/flogo_05.png" alt=""></a></li>
+					<li><a href="#" target="_blank"><img src="assets/img/common/flogo_06.png" alt=""></a></li>
+					<li><a href="#" target="_blank"><img src="assets/img/common/flogo_07.png" alt=""></a></li>
+					<li><a href="#" target="_blank"><img src="assets/img/common/flogo_08.png" alt=""></a></li>
+					<li><a href="#" target="_blank"><img src="assets/img/common/flogo_09.png" alt=""></a></li>
+				</ul>
+				<ul class="list-links">
+					<li><a href="#" class="over-line over-line-white">会社概要</a></li>
+					<li><a href="#" class="over-line over-line-white">プライバシーポリシー</a></li>
+					<li><a href="#" class="over-line over-line-white">特定商取引法及び古物営業法に基づく表記</a></li>
+					<li><a href="#" class="over-line over-line-white">サイトマップ</a></li>
+				</ul>
+				<p id="copyright">Copyright &copy; お宝創庫グループ All rights reserved.</p>
+			</div>
+		</div>
+	</footer>
+	<!-- End Footer -->
+
+	<script src="assets/js/jquery-3.5.1.min.js"></script>
+	<script src="assets/js/jquery.matchHeight-min.js"></script>
+	<script src="assets/js/slick.min.js"></script>
+	<script src="assets/js/script.js"></script>
+</body>
+</html>
